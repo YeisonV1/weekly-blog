@@ -3,28 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/form.css">
     <title>Front Page</title>
 </head>
 <body>
-    <header>
-        <h1>Weekly Blog</h1>
-    </header>
-   
-    <form action="">
-        <label for="title">Title Of The Week!</label>
-        <input type="text" class="title-box"><br>
+    <div class="container">
+    <div class="logo">
+        <p>Weekly</p>
+        <p>Blog</p>
+    </div>
+        <form action="" class="weekly-form">
+                            
+                            <!--Title-->
+                <input type="text" name="name" placeholder="Name Of The Week" class="text-input" required>
+            
+                            <!--Date-->
+                <input type="text" name="date" placeholder="Date" class="text-input" required>
+           
+                            <!--Story-->
+                <textarea name="message" placeholder="What Happened This Week?" class="text-input" required></textarea>
+            
+                            <!--Submit Btn-->
+            <button type="submit">Submit</button>
 
-        <label for="dtae">Date</label>
-        <input type="text" class="date-box"><br>
+        </form>
+    </div>
 
-        <label for="story">What Happened This Week?</label>
-        <input type="text" class="story-box" name="story-box"><br>
-        
-        <input type="submit" id="submit-btn">
-    </form>
-    <script src="assets/js/form.js"></script>
+    <!-- <script src="assets/js/form.js"></script> -->
     <script src="assets/js/logic.js"></script>
 </body>
 </html>
