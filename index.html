@@ -18,18 +18,25 @@
     </div>
         <form action="" class="weekly-form">
                             
-                            <!--Title-->
-                <input type="text" name="name" placeholder="Name Of The Week" class="text-input" required>
-            
-                            <!--Date-->
-                <input type="text" name="date" placeholder="Date" class="text-input" required>
-           
-                            <!--Story-->
-                <textarea name="message" placeholder="What Happened This Week?" class="text-input" required></textarea>
-            
-                            <!--Submit Btn-->
+                        <!--Title-->
+            <div class="text-input">
+                <input type="text" name="name" placeholder="Name Of The Week" id="title" required>
+            </div>
+                            
+                    <!--Date-->
+            <div class="text-input">
+                <input type="text" name="date" placeholder="Date" id="date" required>
+            </div>
+                           
+                    <!--Story-->
+            <div class="text-input">
+                <textarea name="message" placeholder="What Happened This Week?" id="text-msg" required></textarea>
+            </div>
+                           
+                    <!--Submit Btn-->
+            <div>
             <button type="submit">Submit</button>
-
+            </div>
         </form>
     </div>
 

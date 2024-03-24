@@ -20,6 +20,7 @@ body{
    flex-direction: column;
    align-items: start;
    gap: 20px;
+   
 }
 
 .logo p {
@@ -31,29 +32,32 @@ body{
     font-size: 235px;
 }
 
-.text-input{
+.text-input input,
+textarea{
+    font-family: "Caveat", cursive;
+    font-size: 30px;
+    color: grey;
     width: 400px;
     height: 100px;
     border: none;
     outline: none;
     padding: 25px;
-    border-radius: 50px;
+    border-radius: 60px;
 }
 
-.text-input::placeholder{
+.text-input input::placeholder{
     font-family: "Caveat", cursive;
     font-size: 30px;
     font-weight: 500;
 }
 
-.weekly-form textarea{
+.text-input textarea{
+    font-family: "Caveat", cursive;
+    font-size: 20px;
+    color: grey;
     height: 140px;
     padding-top: 15px;
     border-radius: 20px;
-}
-
-.text-input:focus{
-    border: 4px solid #00aeff;
 }
 
 .weekly-form button {
@@ -71,8 +75,11 @@ body{
 }
 
 @media (max-width:800px){
-    .text-input,
+    .text-input input,
     .logo p{
         width: 80vh;
+    }
+    .weekly-form{
+        padding-bottom: 30px;
     }
 }
