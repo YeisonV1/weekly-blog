@@ -15,7 +15,7 @@ body{
    justify-content: space-evenly;
 }
 
-.weekly-form{
+#weekly-form{
    display: flex;
    flex-direction: column;
    align-items: start;
@@ -27,16 +27,16 @@ body{
     width: 500px;
     font-family: "Caveat", cursive;
     font-weight: 600;
-    color: rgb(246, 211, 85);
+    color: rgb(248, 227, 149);
     text-shadow: 1px 1px 8px yellow;;
     font-size: 235px;
+    cursor: pointer;
 }
 
 .text-input input,
 textarea{
     font-family: "Caveat", cursive;
     font-size: 30px;
-    color: grey;
     width: 400px;
     height: 100px;
     border: none;
@@ -54,25 +54,30 @@ textarea{
 .text-input textarea{
     font-family: "Caveat", cursive;
     font-size: 20px;
-    color: grey;
+    color: black;
     height: 140px;
     padding-top: 15px;
     border-radius: 20px;
 }
 
-.weekly-form button {
+#weekly-form button{
     display: flex;
     align-items: center;
     padding: 15px 30px;
-    font-size: 16px;
     height: 15px;
     gap: 10px;
     border: none;
     border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: rgb(255, 251, 16);
     cursor: pointer;
-    color: white;
     background: rgb(0, 178, 254);
 }
+
+
 
 @media (max-width:800px){
     .text-input input,
