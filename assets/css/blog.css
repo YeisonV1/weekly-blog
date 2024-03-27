@@ -72,17 +72,16 @@ body{
 }
 
 .box-date span{
-    text-overflow: ellipsis;
-    font-size: 35px;
-    font-family: "Caveat", cursive;
-    background-color: #032a61;
-    margin-left: 20px;
-    padding: 11px 30px;
-    width: 16%;
-    height: 70px;
-    border: none;
-    outline: solid rgb(96, 96, 235);
-    border-radius: 60px;
+       font-size: 35px;
+       font-family: "Caveat", cursive;
+       background-color: #032a61;
+       margin-left: 20px;
+       padding: 11px 30px;
+       width: 49%;
+       height: 70px;
+       border: none;
+       outline: solid rgb(96, 96, 235);
+       border-radius: 60px;
 }
 
 

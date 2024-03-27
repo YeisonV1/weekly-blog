@@ -23,6 +23,7 @@ body{
    
 }
 
+/* Weekly Logo*/
 .logo p {
     width: 500px;
     font-family: "Caveat", cursive;
@@ -51,6 +52,8 @@ textarea{
     font-weight: 500;
 }
 
+
+/*Story Text Box*/
 .text-input textarea{
     font-family: "Caveat", cursive;
     font-size: 20px;
@@ -60,6 +63,8 @@ textarea{
     border-radius: 20px;
 }
 
+
+/*Submit Button*/
 #weekly-form button{
     display: flex;
     align-items: center;
@@ -75,6 +80,7 @@ textarea{
     color: rgb(255, 251, 16);
     cursor: pointer;
     background: rgb(0, 178, 254);
+    margin-bottom: 20px;
 }
 
 
