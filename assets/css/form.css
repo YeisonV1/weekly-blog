@@ -8,11 +8,64 @@ body{
     background: linear-gradient(#032a61, #793e00);
 }
 .container{
+    position: relative;
    height: 100vh;
    display: flex;
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-evenly;
+}
+
+.night-day{
+    position: absolute;
+    display: block;
+    right: 413px;
+    top: 338px;
+
+}
+
+
+.modes{
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    border-radius: 50px;
+    width: 90px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.modes .day-mode{
+    color: #032a61;
+}
+
+.modes .night-mode{
+    color: pink;
+}
+
+.circle{
+position: absolute;
+left: 50%;
+width: 50%;
+height: 100%;
+background: purple;
+border-radius: 50px;
+transition: .5s ease all;
+}
+
+.checkbox{
+    display: block;
+    top: 30px;
+    /* opacity: 0; */
+    position: absolute;
+}
+
+.checkbox:checked +.modes .circle{
+    left: 0;
 }
 
 #weekly-form{
